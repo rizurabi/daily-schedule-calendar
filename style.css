@@ -38,8 +38,8 @@ header {
 }
 
 textarea {
-    width: 80%;
-    height: 100%;
+    width: 75%;
+    height:80px;
     border: none;
     resize: none;
 }
