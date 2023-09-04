@@ -1,5 +1,5 @@
 body {
-    font-family: Arial, sans-serif;
+    font-family: serif, sans-serif;
 }
 
 header {
@@ -23,6 +23,7 @@ header {
     border: 1px solid #ddd;
     margin-bottom: 5px;
 }
+
 
 .past {
     background-color: #d3d3d3;
@@ -48,4 +49,11 @@ textarea {
     color: #fff;
     border: none;
     cursor: pointer;
+    width: 50px;
+    height: 50px;
+    transition: background-color 0.3s ease;
+
+}
+.save-button:hover {
+    background-color: #253f50;
 }

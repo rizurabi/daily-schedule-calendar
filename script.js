@@ -1,11 +1,10 @@
 document.addEventListener("DOMContentLoaded", function () {
-    // Function to display the current day at the top of the calendar
+    
     function displayCurrentDay() {
         const currentDay = moment().format("dddd, MMMM Do YYYY");
         document.getElementById("currentDay").textContent = currentDay;
     }
 
-    // Function to create time blocks and color code them
     function createTimeBlocks() {
         const timeBlocks = document.getElementById("time-blocks");
         const currentHour = moment().hour();
@@ -27,7 +26,6 @@ document.addEventListener("DOMContentLoaded", function () {
                 textarea.classList.add("future");
             }
 
-            // Load saved events from local storage
             const savedEvent = localStorage.getItem(`event-${hour}`);
             if (savedEvent) {
                 textarea.value = savedEvent;
@@ -48,7 +46,6 @@ document.addEventListener("DOMContentLoaded", function () {
             timeBlocks.appendChild(timeBlock);
         }
     }
-
     displayCurrentDay();
     createTimeBlocks();
 });
