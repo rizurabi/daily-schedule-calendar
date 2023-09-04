@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #3498db;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+}
+
+.main {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.time-block {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #ddd;
+    margin-bottom: 5px;
+}
+
+.past {
+    background-color: #d3d3d3;
+}
+
+.present {
+    background-color: #ff6961;
+}
+
+.future {
+    background-color: #77dd77;
+}
+
+textarea {
+    width: 80%;
+    height: 100%;
+    border: none;
+    resize: none;
+}
+
+.save-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
